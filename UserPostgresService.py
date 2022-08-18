@@ -14,7 +14,8 @@ class UserPostgresService:
             user_id serial PRIMARY KEY,
             email VARCHAR( 255 ) NOT NULL,
             login VARCHAR( 255 ) NOT NULL,
-            password VARCHAR(255) NOT NULL
+            password VARCHAR(255) NOT NULL,
+            token VARCHAR( 255 )
             )
         ''')
 
@@ -25,8 +26,11 @@ class UserPostgresService:
     async def disconnect(self):
         await self.connection.close()
 
-    async def create_user(self, email: str, login: str, password: str):
-        await self.connection.execute(f'''
-                INSERT INTO {self.table_name} (email, login, password)
-                VALUES ($1, $2, $3);
-            ''',email, login, password)
+    async def create_user(self, email: str, login: str, password: str, token_reponse: str):
+        try:
+            await self.connection.execute(f'''
+                    INSERT INTO {self.table_name} (email, login, password, token)
+                    VALUES ($1, $2, $3, $4);
+                ''',email, login, password, token_reponse)
+        except:
+            None

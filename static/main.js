@@ -22,8 +22,9 @@ $("#btn_in").on('click', function(e) {
         const formData = {
             'email': $('#email_in').val(),
             'login': $('#login_in').val(),
-            'password': $('#password_in').val()
+            'password': $('#password_in').val(),
         };
+        $("#form_in").trigger('reset');
         $.ajax({
         type: 'post',
         url: '/authorization/registration',
@@ -31,6 +32,5 @@ $("#btn_in").on('click', function(e) {
         contentType: "application/json; charset=utf-8",
         traditional: true,
         });
-
 });
 });

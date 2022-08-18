@@ -3,4 +3,7 @@ uvicorn
 asyncpg
 dependency_injector
 pyyaml
-jwt
+PyJWT
+python-decouple
+requests
+tmdbv3api

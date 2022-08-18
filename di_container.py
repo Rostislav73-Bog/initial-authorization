@@ -4,7 +4,6 @@ from UserPostgresService import UserPostgresService
 
 class Container(containers.DeclarativeContainer):
     config = providers.Configuration()
-
     user_client = providers.Singleton(
         UserPostgresService,
         url=config.postgres.host,
