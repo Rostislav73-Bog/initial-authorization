@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav nav-tabs {
+    justify-content: center;
+}
+
+.all {
+    margin-top: 20px;
+}
+
+.list-group {
+   margin-top: 10px;
+}

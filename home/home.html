@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="home.js"></script>
+<head>
+    <meta charset="utf-8">
+    <title>Страница</title>
+    <link rel="stylesheet" type="text/css" href="style_home.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="all">
+        <nav>
+          <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Просмотренные фильмы</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Хочу посмотреть</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">О себе</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Название фильма</h5>
+                    </div>
+                    <p class="mb-1">Информация о фильме</p>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Название фильма</h5>
+                    </div>
+                    <p class="mb-1">Информация о фильме</p>
+                  </a>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Название фильма</h5>
+                    </div>
+                    <p class="mb-1">Информация о фильме</p>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Название фильма</h5>
+                    </div>
+                    <p class="mb-1">Информация о фильме</p>
+                  </a>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+              <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Никней
+                    <span class="badge bg-primary rounded-pill">что-то</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Любимые жанры
+                    <span class="badge bg-primary rounded-pill">Например "боевик"</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Сколько на времени зарегистрирован на сайте
+                    <span class="badge bg-primary rounded-pill">5 мин</span>
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
